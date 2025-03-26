@@ -8,9 +8,10 @@ describe('convertAreaToSquareFeet', () => {
   });
   
 
-  test('should return 0 for area of 0', () => {
+  test('Verify that the area is 0 when the input area is 0', () => {
     expect(convertAreaToSquareFeet(0)).toBe(0);
   });
+  
 
   test('should handle negative values correctly', () => {
     expect(convertAreaToSquareFeet(-100)).toBeCloseTo(-1076.39);
