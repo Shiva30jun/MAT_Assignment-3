@@ -7,10 +7,10 @@ describe("calculateCanvasSize", () => {
     expect(result).toEqual(1000);
   })
 
-    test("returns correct result", () => {
+    test("calculates area correctly for given length and width", () => {
     const result = calculateCanvasSize("5", "5"); //  
     expect(result).toEqual(25);
 
     })
-    
+
 });
