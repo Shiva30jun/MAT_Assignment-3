@@ -20,4 +20,10 @@ describe('calculatePaintCost', () => {
     expect(calculatePaintCost(10, -5)).toBe(-50);
     expect(calculatePaintCost(-10, -5)).toBe(50);
   });
+
+  test("Verify that the paint cost is 0 when both paint required and cost per liter are 0", () => {
+    expect(calculatePaintCost(0, 0)).toBe(0);
+  });
+
+
 });
