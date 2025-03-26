@@ -24,5 +24,9 @@ describe('convertAreaToSquareFeet', () => {
     expect(convertAreaToSquareFeet(0.5)).toBeCloseTo(5.38195);
     expect(convertAreaToSquareFeet(0.25)).toBeCloseTo(2.690975);
   });
-  
+
+  test('Verify that the area is correctly converted to square feet for very small positive values', () => {
+    expect(convertAreaToSquareFeet(0.01)).toBeCloseTo(0.107639);
+    expect(convertAreaToSquareFeet(0.05)).toBeCloseTo(0.538195);
+  });
 });
