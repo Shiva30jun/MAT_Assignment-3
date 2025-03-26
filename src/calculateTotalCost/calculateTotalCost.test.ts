@@ -1,7 +1,7 @@
 import calculateTotalCost from './calculateTotalCost';
 
 describe('calculateTotalCost', () => {
-  test('should calculate total cost correctly for positive values', () => {
+  test('Verify that the total cost is calculated correctly for positive paint and labor costs', () => {
     expect(calculateTotalCost(100, 50)).toBe(150);
     expect(calculateTotalCost(200, 75)).toBe(275);
     expect(calculateTotalCost(150, 100)).toBe(250);
