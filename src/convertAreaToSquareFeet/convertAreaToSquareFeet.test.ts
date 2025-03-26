@@ -13,9 +13,10 @@ describe('convertAreaToSquareFeet', () => {
   });
   
 
-  test('should handle negative values correctly', () => {
+  test('Verify that the area is correctly converted to square feet for negative values', () => {
     expect(convertAreaToSquareFeet(-100)).toBeCloseTo(-1076.39);
     expect(convertAreaToSquareFeet(-200)).toBeCloseTo(-2152.78);
     expect(convertAreaToSquareFeet(-150)).toBeCloseTo(-1614.585);
   });
+  
 });
