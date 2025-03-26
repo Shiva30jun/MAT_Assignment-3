@@ -1,4 +1,4 @@
-export default function calculateCanvasSize(
+export default function calculateCanvas(
   length: string,
   width: string
 ) {

@@ -1,4 +1,4 @@
-import calculateCanvasDiagonal from './calculateCanvasDiagonal';
+import calculateCanvasDiagonal from './calculateCanvasDiagonal'; 
 
 describe('calculateCanvasDiagonal', () => {
   test('should calculate diagonal correctly for positive values', () => {
@@ -21,5 +21,11 @@ describe('calculateCanvasDiagonal', () => {
     expect(calculateCanvasDiagonal('a', '4')).toBeNaN();
     expect(calculateCanvasDiagonal('3', 'b')).toBeNaN();
     expect(calculateCanvasDiagonal('a', 'b')).toBeNaN();
+  });
+
+  test('should handle empty strings by returning NaN', () => {
+    expect(calculateCanvasDiagonal('', '4')).toBeNaN();
+    expect(calculateCanvasDiagonal('3', '')).toBeNaN();
+    expect(calculateCanvasDiagonal('', '')).toBeNaN();
   });
 });
