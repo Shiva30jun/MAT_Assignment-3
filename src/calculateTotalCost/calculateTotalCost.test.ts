@@ -7,9 +7,10 @@ describe('calculateTotalCost', () => {
     expect(calculateTotalCost(150, 100)).toBe(250);
   });
 
-  test('should return paint cost when labor cost is 0', () => {
+  test('Verify that the total cost returns the paint cost when labor cost is 0', () => {
     expect(calculateTotalCost(100, 0)).toBe(100);
   });
+  
 
   test('should return labor cost when paint cost is 0', () => {
     expect(calculateTotalCost(0, 50)).toBe(50);
@@ -24,4 +25,6 @@ describe('calculateTotalCost', () => {
   test('should return 0 when both costs are 0', () => {
     expect(calculateTotalCost(0, 0)).toBe(0);
   });
+
+    
 });
