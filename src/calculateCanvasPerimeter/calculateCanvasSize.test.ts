@@ -13,4 +13,9 @@ describe("calculateCanvasSize", () => {
 
     })
 
+    test("Verify that the function returns NaN when non-numeric length and width are provided", () => {
+      const result = calculateCanvasSize("five", "ten");
+      expect(result).toBeNaN(); 
+    });
+
 });
