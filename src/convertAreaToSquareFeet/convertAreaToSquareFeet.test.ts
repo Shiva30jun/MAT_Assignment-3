@@ -19,4 +19,10 @@ describe('convertAreaToSquareFeet', () => {
     expect(convertAreaToSquareFeet(-150)).toBeCloseTo(-1614.585);
   });
   
+
+  test('Verify that the area is correctly converted to square feet for small decimal values', () => {
+    expect(convertAreaToSquareFeet(0.5)).toBeCloseTo(5.38195);
+    expect(convertAreaToSquareFeet(0.25)).toBeCloseTo(2.690975);
+  });
+  
 });
