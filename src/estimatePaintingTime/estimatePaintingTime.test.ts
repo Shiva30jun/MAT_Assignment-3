@@ -8,5 +8,9 @@ describe('estimatePaintingTime', () => {
     expect(estimatePaintingTime(150, 15)).toBe(10);
   });
   
+  test('Verify that the painting time returns Infinity when painting speed is 0', () => {
+    expect(estimatePaintingTime(100, 0)).toBe(Infinity);
+  });
+  
 });
 
