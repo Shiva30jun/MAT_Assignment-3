@@ -19,6 +19,9 @@ describe('estimatePaintingTime', () => {
   test('Verify that the painting time is calculated correctly for small area and painting speed values', () => {
     expect(estimatePaintingTime(0.01, 0.1)).toBeCloseTo(0.1);
   });
-  
+
+  test('Verify that the painting time is calculated correctly for large area and painting speed values', () => {
+    expect(estimatePaintingTime(1000000, 5000)).toBe(200);
+  });
 });
 
