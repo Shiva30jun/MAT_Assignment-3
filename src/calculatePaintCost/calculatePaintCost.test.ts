@@ -25,5 +25,8 @@ describe('calculatePaintCost', () => {
     expect(calculatePaintCost(0, 0)).toBe(0);
   });
 
-
+  test('Verify that the paint cost is calculated correctly for fractional values of paint required and cost per liter', () => {
+    expect(calculatePaintCost(2.5, 4.5)).toBe(11.25);
+  });
+  
 });
