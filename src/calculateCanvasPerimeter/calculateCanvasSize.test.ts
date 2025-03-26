@@ -6,4 +6,11 @@ describe("calculateCanvasSize", () => {
 
     expect(result).toEqual(1000);
   })
+
+    test("returns correct result", () => {
+    const result = calculateCanvasSize("5", "5"); //  
+    expect(result).toEqual(25);
+
+    })
+    
 });
