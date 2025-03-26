@@ -7,5 +7,8 @@ describe('paintRequiredForMultipleCoats', () => {
     expect(paintRequiredForMultipleCoats(150, 15, 4)).toBe(40);
   });
   
- 
+  test('Verify that the paint required is 0 when the area is 0', () => {
+    expect(paintRequiredForMultipleCoats(0, 10, 2)).toBe(0);
+  });
+  
 });
